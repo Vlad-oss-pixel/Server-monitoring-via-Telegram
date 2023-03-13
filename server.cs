@@ -76,13 +76,14 @@ public class ServerMonitor
     {
         bot.SendTextMessageAsync(chatId, message, ParseMode.Default, false, false);
     }
-}
-static void Main(string[] args)
-{
-    string token = "TOKEN";
-    string chatId = "CHAT_ID";
-    ServerMonitor serverMonitor = new ServerMonitor(token, chatId);
-    serverMonitor.Start();
+    static void Main(string[] args)
+    {
+        string token = "TOKEN";
+        string chatId = "CHAT_ID";
+        ServerMonitor serverMonitor = new ServerMonitor(token, chatId);
+        serverMonitor.Start();
 
-    Console.ReadLine();
+        Console.ReadLine();
+    } 
 }
+
